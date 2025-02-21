@@ -34,7 +34,7 @@ const data = {
     },
     {
       label: 'Maria Nunes',
-      data: [5.5, 6, 6.2, 5.8],
+      data: [],
       borderColor: 'rgb(255, 159, 64)',
       tension: 0.1,
     },
