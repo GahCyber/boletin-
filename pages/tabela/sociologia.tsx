@@ -64,7 +64,7 @@ const Biologia = () => {
       </header>
 
       <section className="content">
-        <h2>Tabela de Notas de Física</h2>
+        <h2>Tabela de Notas de Sociologia</h2>
         <table className="nota-table">
           <thead>
             <tr>

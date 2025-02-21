@@ -1,6 +1,10 @@
 @import "./variables.scss"; // Certifique-se de ter variáveis definidas para cores e fontes
 
 // Reset básico
+html {
+  scroll-behavior: smooth; // Aplica a rolagem suave em toda a página
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +17,6 @@ body {
   color: #333;
   line-height: 1.6;
   padding: 2rem;
-
 }
 
 .home {
@@ -25,25 +28,20 @@ body {
     font-size: 3rem;
     color: $text-color;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 20px #800000;
   }
 
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     padding: 0;
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
 
     li {
-
-      h2 {
-        font-size: 1.0rem;
-        padding: 1.5rem;
-        background-color: #4CAF50;
-        color: $text-color;
-        border-bottom: 3px solid #388E3C;
-      }
+      text-align: center;
 
       a {
         display: block;
@@ -52,18 +50,26 @@ body {
         color: $text-color;
         text-decoration: none;
         background-color: $card-background;
-        text-align: center;
-        border-radius: 15px;
+        border-radius: 10px;
         transition: background-color 0.3s ease, color 0.3s ease;
 
         &:hover {
-          background-color: #5a90c2;
-          color: rgb(255, 0, 191);
+              background: linear-gradient(
+              to bottom,
+              #e40303, // Vermelho
+              #ff8c00, // Laranja
+              #ffed00, // Amarelo
+              #008026, // Verde
+              #24408e, // Azul
+              #732982  // Roxo
+  );
+          color: rgb(0, 0, 0);
         }
       }
     }
   }
 }
+
 
 // Animações
 @keyframes fadeIn {
@@ -104,4 +110,21 @@ body {
       font-size: 1rem;
     }
   }
+}
+
+/* Estilos gerais para os links */
+.materia-link {
+  display: block;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
 }

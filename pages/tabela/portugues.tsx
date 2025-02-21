@@ -9,18 +9,35 @@ const data = {
   labels: ['Matéria 1', 'Matéria 2', 'Matéria 3', 'Matéria 4'], // Matérias ou datas
   datasets: [
     {
-      label: 'Aluno 1',
-      data: [8, 7.5, 9, 8], // Notas do aluno 1
+      label: 'Tais Rocha',
+      data: [],
       borderColor: 'rgb(255, 99, 132)',
       tension: 0.1,
     },
     {
-      label: 'Aluno 2',
-      data: [6, 6.5, 7, 6.8], // Notas do aluno 2
+      label: 'Ana Beatriz',
+      data: [],
       borderColor: 'rgb(54, 162, 235)',
       tension: 0.1,
     },
-    // Adicionar mais alunos aqui
+    {
+      label: 'Mariana de Moura',
+      data: [],
+      borderColor: 'rgb(75, 192, 192)',
+      tension: 0.1,
+    },
+    {
+      label: 'Pedro Brito',
+      data: [],
+      borderColor: 'rgb(153, 102, 255)',
+      tension: 0.1,
+    },
+    {
+      label: 'Maria Nunes',
+      data: [],
+      borderColor: 'rgb(255, 159, 64)',
+      tension: 0.1,
+    },
   ],
 };
 
@@ -37,12 +54,10 @@ const options = {
   },
 };
 
-
 const Biologia = () => {
   return (
     <div className="tabela">
       <header className="header">
-        <h1>Boletim de Notas - Portugues</h1>
         <Link href="/">
           <span className="back-link">Voltar para o Boletim</span>
         </Link>
@@ -62,26 +77,29 @@ const Biologia = () => {
           </thead>
           <tbody>
             <tr>
-              <td>Aluno 1</td>
-              <td>8</td>
-              <td>7</td>
-              <td>9</td>
-              <td>8.0</td>
+              <td>Tais Rocha</td>
+              
             </tr>
             <tr>
-              <td>Aluno 2</td>
-              <td>6</td>
-              <td>6.5</td>
-              <td>7</td>
-              <td>6.8</td>
+              <td>Ana Beatriz</td>
+              
             </tr>
-            {/* Adicione mais alunos aqui */}
+            <tr>
+              <td>Mariana de Moura</td>
+              
+            </tr>
+            <tr>
+              <td>Pedro Brito</td>
+              
+            </tr>
+            <tr>
+              <td>Maria Nunes</td>
+              
+            </tr>
           </tbody>
         </table>
 
-
         {/* Adicionando o gráfico de desempenho */}
-        <h3>Desempenho dos Alunos</h3>
         <Line data={data} options={{
           responsive: true,
           plugins: {

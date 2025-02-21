@@ -10,11 +10,13 @@ const Home = () => {
     { nome: 'Química', id: 'quimica' },
     { nome: 'Geografia', id: 'geografia' },
     { nome: 'História', id: 'historia' },
-    { nome: 'Filosofia/Sociologia', id: 'filosofia' },
+    { nome: 'Filosofia', id: 'filosofia' },
+    { nome: 'Sociologia', id: 'sociologia' },
+    { nome: 'Artes', id: 'artes' }
   ];
 
   return (
-    <div className="home">
+    <div className="home" style={{ height: '100vh', overflowY: 'auto', padding: '20px' }}>
       <h1>Boletim de Notas</h1>
       <ul>
         {materias.map((materia, index) => (

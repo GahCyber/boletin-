@@ -64,7 +64,7 @@ const Biologia = () => {
       </header>
 
       <section className="content">
-        <h2>Tabela de Notas de Física</h2>
+        <h2>Tabela de Notas de Artes</h2>
         <table className="nota-table">
           <thead>
             <tr>
@@ -100,6 +100,7 @@ const Biologia = () => {
         </table>
 
         {/* Adicionando o gráfico de desempenho */}
+
         <Line data={data} options={{
           responsive: true,
           plugins: {
