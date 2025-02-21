@@ -78,23 +78,23 @@ const Biologia = () => {
           <tbody>
             <tr>
               <td>Tais Rocha</td>
-              
+              <th>8</th>
             </tr>
             <tr>
               <td>Ana Beatriz</td>
-              
+              <th>5.5</th>
             </tr>
             <tr>
               <td>Mariana de Moura</td>
-              
+              <th>5.5</th>
             </tr>
             <tr>
               <td>Pedro Brito</td>
-              
+              <th>7.75</th>
             </tr>
             <tr>
               <td>Maria Nunes</td>
-              
+              <th>2.5</th>
             </tr>
           </tbody>
         </table>
