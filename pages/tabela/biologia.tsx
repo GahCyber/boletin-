@@ -10,31 +10,31 @@ const data = {
   datasets: [
     {
       label: 'Tais Rocha',
-      data: [],
+      data: [8],
       borderColor: 'rgb(255, 99, 132)',
       tension: 0.1,
     },
     {
       label: 'Ana Beatriz',
-      data: [],
+      data: [5.5],
       borderColor: 'rgb(54, 162, 235)',
       tension: 0.1,
     },
     {
       label: 'Mariana de Moura',
-      data: [],
+      data: [5.5],
       borderColor: 'rgb(75, 192, 192)',
       tension: 0.1,
     },
     {
       label: 'Pedro Brito',
-      data: [],
+      data: [7.75],
       borderColor: 'rgb(153, 102, 255)',
       tension: 0.1,
     },
     {
       label: 'Maria Nunes',
-      data: [],
+      data: [2.5],
       borderColor: 'rgb(255, 159, 64)',
       tension: 0.1,
     },
